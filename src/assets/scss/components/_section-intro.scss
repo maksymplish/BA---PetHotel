@@ -1,0 +1,113 @@
+.ba-section-intro {
+  background: url("./../img/main-bg.jpg") 50% no-repeat;
+  background-size: cover;
+  position: relative;
+  color: $white;
+  padding-bottom: 227px;
+  @include breakpoint(medium){
+	min-height: 100vh;
+	background-attachment: fixed;
+  }
+
+
+  .ba-main-title-container {
+    @media screen and (max-width: 640px) {
+		background: rgba($primary-color, 0.3);
+		margin-bottom: 80px;
+		position: relative;
+		top: 30px;
+    }
+  }
+  &__title {
+    padding: 0 29px;
+    font-size: 31px;
+    @include breakpoint(medium) {
+      font-size: 60px;
+      padding-top: 43px;
+      margin-bottom: 163px;
+      text-align: center;
+    }
+  }
+
+  &__col-left,
+  &__col-right {
+    background: $primary-color;
+    margin: 0 auto;
+    max-width: 359px;
+    max-height: 264px;
+    @media screen and (min-width: 1024px) {
+      margin: 0;
+    }
+    //@include show-for(medium)
+  }
+
+  &__col-left {
+    padding: 44px 33px 44px 36px;
+    margin-bottom: 20px;
+    justify-content: center;
+    @media screen and (min-width: 1024px) {
+      margin-bottom: 0;
+    }
+  }
+
+  &__col-right {
+    padding: 69px 33px 134px 38px;
+    .ba-col-2-description {
+      margin-bottom: 46px;
+    }
+  }
+  .ba-select-cities {
+    position: relative;
+    select {
+      max-height: 35px;
+      padding-left: 15px;
+      border: none;
+      cursor: pointer;
+      color: $black;
+    }
+  }
+
+  .select-arrow-intro {
+    position: absolute;
+    top: 12px;
+    right: 20px;
+    transform: rotate(90deg);
+    @media (max-width: 1020px) {
+      right: 0;
+    }
+    @media (max-width: 800px) {
+      right: 20px;
+    }
+  }
+
+  .ba-select-cities-mobile {
+    position: absolute;
+    bottom: 20px;
+    left: 20%;
+    select {
+      color: $black;
+      width: 220px;
+    }
+  }
+
+  p {
+    line-height: 1.4;
+    text-align: left;
+    font-weight: 300;
+  }
+
+  &__socials {
+    position: absolute;
+    right: 50px;
+    bottom: 40px;
+  }
+}
+.ba-socials-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  li + li {
+    margin-left: 25px;
+  }
+}

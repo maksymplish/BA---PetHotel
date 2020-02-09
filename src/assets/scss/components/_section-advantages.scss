@@ -1,0 +1,29 @@
+
+.ba-column-advantages + .ba-column-advantages{
+	margin-top: 20px;
+	@include breakpoint(large){
+		margin-left: 97px;
+		margin-top: 0;
+	}
+	
+}
+
+.ba-column-advantages .ba-column-title{
+	display: flex;
+	align-items: center;
+	margin-bottom: 10px;
+	margin-left: 10px;
+	h3{
+		
+		margin-left: 10px;
+	}
+	@include breakpoint(large){
+		padding: 0;
+	}
+}
+.ba-column-description{
+	padding: 0 10px;
+	@include breakpoint(large){
+		padding: 0;
+	}
+}
